@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>9.4 イベント処理</title>
+  </head>
+<body>
+  <button id="btn">追加</button>
+  <ul id="list"></ul>
+  
+  <script>
+    const list = document.getElementById('list');
+    const btn = document.getElementById('btn');
+    
+    btn.addEventListener('click', () => {
+      const li = document.createElement('li'); // li要素を生成する
+    
+      li.textContent = 'これはリスト要素です'; // li要素にテキストを追加する
+      list.appendChild(li); // li要素をul要素内に追加して表示する
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>9.2 Dom操作の基本</title>
+  </head>
+<body>
+  <ul>
+    <li id="text" class="sample">１つ目の項目</li>
+    <li class="sample">２つ目の項目</li>
+  </ul>
+  
+  <script>
+    const sample = document.getElementsByClassName('sample');
+    
+    for(let i=0; i<sample.length; i++) {
+      console.log(sample[i]);
+    }
+  </script>
+</body>
+</html>

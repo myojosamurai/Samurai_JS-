@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>11.5演習問題</title>
+  </head>
+<body>
+  <h1>JavaScript関連のリポジトリ総数 by GitHub</h1>
+  <button id="btn">更新</button>
+  <p id="sousuu"></p>
+  
+  <script>    
+    const url = 'https://api.github.com/search/repositories?q=javascript';
+    const btn = document.getElementById('btn');
+    const sousuu = document.getElementById('sousuu');
+    
+    btn.addEventListener('click', () => {
+        sousuu.innerHTML = ''; // 結果表示部分をリセット
+
+        fetch(url)
+        .then(data => data.json())
+        .then(data => {
+            //console.log(data);
+            //console.log(data.total_count);
+            sousuu.innerHTML ='リポジトリの総数は、'+data.total_count+'件です！';
+        })
+    })
+    
+    const createSentence = item => {
+        
+    }
+    
+  </script>
+</body>
+</html>

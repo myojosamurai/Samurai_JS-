@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>8.4演習問題</title>
+  </head>
+  <body>
+
+    <script>
+    
+class Animal {
+  constructor(name, age) {
+     this.name = name;
+     this.age = age;
+  }
+}
+
+class Cat extends Animal{
+  constructor (name, age, type){
+      super(name,age);
+      this.type = type;
+  }
+}
+
+const cat2 = new Cat('ねこまる','2才','シャム');
+console.log(cat2);
+
+    </script>
+  </body>
+</html>

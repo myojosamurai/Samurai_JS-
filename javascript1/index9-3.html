@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>9.3 HTML要素を作成する</title>
+  </head>
+<body>
+  <h1>サンプルタイトル</h1>
+
+  <h2>小見出し１</h2>
+  
+  <div id="area1"></div>
+  
+  <script>
+      const h2 = document.createElement('h2');// h2要素の生成
+      h2.textContent = '小見出し2';// h2要素にテキストを追加
+      //h2.innerHTML='<a href="#">小見出し2</a>'
+      
+      document.body.appendChild(h2);// h2要素をdocument.bodyの末尾に追加
+      
+      
+      //----- 任意の場所に見出しを追加 ----//
+      //// insertBefore という方法もある
+      //const h2_2 = document.createElement('h2');
+      //h2_2.textContent = '小見出し2_2';
+      //div_area1.appendChild(h2_2);
+      
+      
+  </script>
+</body>
+</html>

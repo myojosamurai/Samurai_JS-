@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>9.5 フォーム要素を抑制する</title>
+  </head>
+<body>
+  <form name="myForm">
+    <input type="text" name="myText">
+  </form>
+  <button id="btn">カウント</button>
+  
+  <script>
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener("click", () => {
+      const value = document.forms.myForm.myText.value; // 入力された文字列を取得する
+
+      console.log(value.length + "文字"); // 文字数を出力する
+    });    
+  </script>
+</body>
+</html>

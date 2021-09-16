@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>11.4 Ajaxプログラムの作り方</title>
+  </head>
+<body>
+  <h1>JavaScript関連の最新記事 by Qiita</h1>
+  <button id="btn">更新</button>
+  <ul id="list"></ul>
+  
+  <script>    
+    const url = 'https://qiita.com/api/v2/tags/javascript/items';
+    const btn = document.getElementById('btn');
+    const list = document.getElementById('list');
+    
+    const createList = item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+    
+        a.href = item.url;
+        li.textContent = item.title;
+    
+        //aタグのなかにliを入れる。
+        a.appendChild(li);
+        //list のなか最後にaを入れる。
+        list.appendChild(a);
+    }
+    
+    btn.addEventListener('click', () => {
+    
+        // ボタンがクリックされたらfetch()を実行する
+        list.innerHTML = ''; // 結果表示部分をリセット
+    
+        fetch(url)
+        .then(data => data.json())
+        .then(data => {
+    
+            data.forEach(item => createList(item))
+    
+        })
+    })
+    
+  </script>
+</body>
+</html>

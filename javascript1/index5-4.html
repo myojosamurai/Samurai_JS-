@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>5.4 演習問題</title>
+  </head>
+<body>
+  <script>
+  
+  let tekiTairyoku = 10;
+  let command;
+  let random;
+  
+  while(tekiTairyoku > 0) {
+      command = prompt('敵が現れた！（【1】攻撃　【2】逃げる）');
+      
+      if ( command==='2'){
+        console.log('無事に逃げました');
+      }else if( command==='1'){
+        random = Math.floor(Math.random() *10);
+        console.log(random+'の攻撃！');
+
+        tekiTairyoku = tekiTairyoku - random;
+        if( tekiTairyoku <= 0){
+            console.log('敵を倒した!');
+        }else{
+            console.log('敵の体力は残り'+tekiTairyoku+'です');
+        }
+      }
+  }
+  console.log('ゲーム終了');
+ 
+  </script>
+</body>
+</html>

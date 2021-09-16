@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>6.7 演習問題</title>
+  </head>
+<body>
+  <script>
+  
+    const rate = 108;
+    
+    //function convertDollarToYen(amount){
+    //    return amount * rate;
+    //}
+    let convertDollarToYen = (amount) => amount * rate;
+    
+    while(true) {
+        
+        let dlamount = prompt('何ドルを円に換算しますか？');
+        
+        if (dlamount){
+            console.log( dlamount+'ドルは'+convertDollarToYen( dlamount )+'円です。' );
+        }else{
+            break;
+        }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>7.5演習問題</title>
+  </head>
+<body>
+  <script>
+const hero = {
+
+  hp:100,
+  exp:80,
+  sword:12,
+  magic:20,
+  
+  //アロー関数は使わないこと
+  attack_sword: function() {
+    return this.sword * ( this.exp / 100 );
+  },
+  attack_magic: function() {
+    return this.magic * ( this.exp / 100 );
+  }
+  
+}
+
+console.log(hero.attack_sword());
+console.log(hero.attack_magic());
+
+//-----------------------------------------
+const myObj = {
+ 
+    getSomething: function() {
+        
+        //メソッド呼び出し
+        console.log( this );
+
+        //関数呼び出し
+        function showSomething() {
+            console.log( this );
+        }
+       showSomething();
+    }
+ 
+};
+myObj.getSomething();
+
+  </script>
+</body>
+</html>
