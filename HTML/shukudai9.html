@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <meta charset="utf-8">
+      <title>9章宿題</title>
+      <style>
+        .ft{
+          /*display:inline-blockの隙間問題はテキストの改行が原因で起こるので、
+inline-blockを使った要素の親要素にfont-size:0;を指定すると改善されます。*/
+          /*font-size:0;*/
+        }
+        .redbox1{
+          height:150px;
+          width:200px;
+          background-color: red;
+          display: inline-block;
+          font-size:0;
+        }
+        .bluebox1{
+          height:150px;
+          width:200px;
+          background-color: blue;
+          display: inline-block;
+          font-size:0;
+        }
+        .yellowbox1{
+          height:150px;
+          width:200px;
+          background-color: yellow;
+          display: inline-block;
+        }  
+        
+        .redbox{
+          height:150px;
+          width:200px;
+          background-color: red;
+           float: left;
+        }
+        .bluebox{
+          height:150px;
+          width:200px;
+          background-color: blue;
+          float: left;
+        }
+        .yellowbox{
+          height:150px;
+          width:200px;
+          background-color: yellow;
+          float: left;
+        }   
+        
+      </style>
+    </head>
+    <body>
+    <!-- 縦150px 幅200pxで、背景色が、赤、青、黄色(yellow)のボックスを3つ作ります。->
+    <!-- display: inline-blocksを使って3つのボックスを横に並べてみましょう-->
+    <!-- Floatをつかって3つのボックスを横に並べてみましょう。-->
+
+   <div class="ft">
+     <div class="redbox1">
+     </div>
+     <div class="bluebox1">
+     </div>
+     <div class="yellowbox1">
+     </div>
+   </div>
+
+   <br>
+   
+   <div class="redbox">
+   </div>
+   <div class="bluebox">
+   </div>
+   <div class="yellowbox">
+   </div>
+   
+
+   
+   
+    </body>
+</html>

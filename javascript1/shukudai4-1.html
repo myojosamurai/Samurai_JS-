@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>4章宿題</title>
+  </head>
+  <body>
+    <p>変数currentMonthを作成し、11を設定してください。</p>
+    <p>if文を使い、変数currentMonthの中身が3～5であれば'春'、
+        6～8であれば'夏'、9～11であれば'秋'、12、1、2であれば'冬'
+        とコンソールに出力されるようにしてください。</p>
+　　<p>2つ以上の数値を1度に比較する場合は下記のURLの『複数の条件を比較しよう』を参考にしてください</p>
+　　<p>https://www.sejuku.net/blog/23942</p>
+    <script>
+        const currentMonth =11;
+        if(currentMonth >=3 && currentMonth <=5){
+            console.log('春');
+        }else if(currentMonth >=6 && currentMonth <=8){
+            console.log('夏');            
+        }else if(9 <= currentMonth && currentMonth <=11){
+            console.log('秋');            
+        }else if(12== currentMonth || 1== currentMonth ||  2== currentMonth){
+            console.log('冬');            
+        }
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>3章宿題</title>
+<body>
+    <p>1．りんご、みかん、オレンジ、という3つの要素が入った配列basketを作ってください。</p>
+    <p>2．配列basketにバナナを追加してください。</p>
+    <p>3．forEach関数を使って配列basketの中身をコンソールに出力してください。</p>
+    <p>4．配列basketの3番目に入っている果物をコンソールに出力してください。</p>
+    <p>5．配列basketの長さ（要素数）をコンソールに出力してください。</p>
+    <p>6．Math.floorとMath.randamを使い、配列basketから果物をひとつランダムで取得してコンソールに出力してください。（難）</p>
+    <script>
+       const basket = ['りんご','みかん','オレンジ'];
+       basket.push('バナナ');
+       
+       basket.forEach( element => {
+          console.log(element);
+       })
+       
+       console.log(basket[2]);
+       console.log(basket.length);
+       const rnd = Math.floor(Math.random() * basket.length);
+       console.log(basket[rnd]);
+    </script>
+</body>
+</html>

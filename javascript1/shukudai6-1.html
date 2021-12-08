@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>6章宿題</title>
+  </head>
+  <body>
+    <p>1．addTwoNumbersという関数を作り、第1引数と第2引数を足した結果が戻り値となるようにしてください。</p>
+　　<p>2．関数addTwoNumbersを呼び出し（実行し）、その結果をコンソールに出力してください。その際の引数は10と100としてください</p>
+　　<p>※関数を使う場合と、関数式を使う場合、両方考えてみてください。</p>
+    <script>
+
+　    function addTwoNumbers0(num1,num2){
+        return num1+num2;
+      }
+      console.log(addTwoNumbers0(10, 100));
+　
+　
+      /* 関数式 */
+      const addTwoNumbers1 = function (num1,num2){
+        return num1+num2;
+      }
+      console.log(addTwoNumbers1(10, 100));
+     
+     
+      const addTwoNumbers2 = (num1,num2)=>{
+        return num1+num2;
+      }
+      console.log(addTwoNumbers2(10, 100));
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>7章宿題</title>
+  </head>
+  <body>
+    <p>1．traficLightという名前のオブジェクトを作ってください。</p>
+　　<p>オブジェクトtraficLightのプロパティに以下の値を設定してください</p>
+　　<p>名前 blue、値 'go'</p>
+　　<p>名前 yellow、値 'slow'</p>
+　　<p>名前 red、値 'stop'</p>
+　　<p>2．オブジェクトtraficLightのなかに、getActionというメソッドを作ってください。</p>
+　　<p>メソッドgetActionでは、colorという引数を設定し、そのcolorが'blue'だったらtraficLightのblueの値を、
+　　　'yellow'だったらtraficLightのyellowの値を、'red'だったらtraficLightのredの値を返すようにしてください。</p>
+　  <p>3．2.で作ったメソッドを実行して結果をコンソールに出力してください。その際には引数として'blue'を設定してください。</p>
+    <script>
+    
+        const traficLight = {
+            blue : 'go',
+            yellow :'slow',
+            red : 'stop',
+            
+            getAction : function(color){
+                if (color =='blue'){
+                    return this.blue;
+                }else if(color =='yellow'){
+                    return this.yellow;  
+                }else if(color =='red'){
+                    return this.red; 
+                }
+            }
+        }
+        
+        console.log(traficLight.getAction('blue'));
+        
+    </script>
+  </body>
+</html>
