@@ -20,11 +20,11 @@ body {
 
  #layout {
      position: static;   /*親要素がstaticのときはウィンドウの左上が基準*/
-     /*position: relative;  */   /*親要素がstatic以外のときは親要素の左上が基準*/
+    position: relative;    /*親要素がstatic以外のときは親要素の左上が基準*/
      top: 30px;
      border:solid 1px black; /*分かりやすいように付け足し*/
      height: 50px;           /*分かりやすいように付け足し*/
-    width: 400px;            /*分かりやすいように付け足し*/
+     width: 400px;            /*分かりやすいように付け足し*/
  }
  #layout1 {
      position:absolute;
